@@ -1,0 +1,27 @@
+INFO 2022-11-11 14:05:59,326 autoreload 51997 140263233537856 Watching for file changes with StatReloader
+WARNING 2022-11-11 14:06:06,718 log 51997 140263194244864 Not Found: /
+WARNING 2022-11-11 14:06:06,719 basehttp 51997 140263194244864 "GET / HTTP/1.1" 404 2604
+WARNING 2022-11-11 14:06:19,168 views 51997 140263194244864 Something warning wrong!
+INFO 2022-11-11 14:06:19,169 basehttp 51997 140263194244864 "GET /addSomething HTTP/1.1" 200 31
+WARNING 2022-11-11 14:06:32,824 log 51997 140263194244864 Not Found: /addNewError
+WARNING 2022-11-11 14:06:32,824 basehttp 51997 140263194244864 "GET /addNewError HTTP/1.1" 404 2655
+WARNING 2022-11-11 14:06:37,126 log 51997 140263194244864 Not Found: /addNewError
+WARNING 2022-11-11 14:06:37,127 basehttp 51997 140263194244864 "GET /addNewError HTTP/1.1" 404 2655
+ERROR 2022-11-11 14:06:44,237 log 51997 140263194244864 Internal Server Error: /addNewError/1
+Traceback (most recent call last):
+  File "/home/linux/django_adv_topic/logger/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/linux/django_adv_topic/logger/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/home/linux/django_adv_topic/logger/env/lib/python3.8/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myapp.views.addNewError didn't return an HttpResponse object. It returned None instead.
+ERROR 2022-11-11 14:06:44,243 basehttp 51997 140263194244864 "GET /addNewError/1 HTTP/1.1" 500 68248
+INFO 2022-11-11 14:07:42,710 autoreload 52708 140553349113664 Watching for file changes with StatReloader
+INFO 2022-11-11 14:08:18,843 autoreload 52904 140102304679744 Watching for file changes with StatReloader
+WARNING 2022-11-11 14:08:21,402 log 52904 140102265386752 Not Found: /
+WARNING 2022-11-11 14:08:21,409 basehttp 52904 140102265386752 "GET / HTTP/1.1" 404 2604
+WARNING 2022-11-11 14:08:21,524 log 52904 140102265386752 Not Found: /favicon.ico
+WARNING 2022-11-11 14:08:21,524 basehttp 52904 140102265386752 "GET /favicon.ico HTTP/1.1" 404 2655
+WARNING 2022-11-11 14:08:56,683 views 52904 140102265386752 Something warning wrong!
+INFO 2022-11-11 14:08:56,684 basehttp 52904 140102265386752 "GET /addSomething HTTP/1.1" 200 31
